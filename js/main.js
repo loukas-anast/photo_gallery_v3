@@ -1,6 +1,6 @@
-jQuery(function ($) {
+$.fn.filter = function () {
     'use strict';
-    $('.search').keyup(function () {
+    this.keyup(function () {
         var filter = $(this).val();
         $('a[data-title]').each(function (index, elem) {
             if ($(elem).attr('data-title').toLowerCase().search(filter.toLowerCase()) < 0) {
@@ -10,4 +10,5 @@ jQuery(function ($) {
             }
         });
     });
-});
+};
+$('.search').filter();
