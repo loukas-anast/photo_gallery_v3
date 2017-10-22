@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:Verdana, sans-serif;
+}
+main{
+    display:block;
+    width:875px;
+    margin:0 auto 100px auto;
+}
+.search{
+    display:block;
+    width:500px;
+    height:40px;
+    padding:10px;
+    margin:40px auto;
+    line-height:40px;
+    border-radius:5px;
+    border:1px solid #c1c1c1;
+}
+.thumb{
+    float:left;
+    margin:0 25px 25px 0;
+}
+main > a:nth-of-type(4n+4) > .thumb{
+    margin:0 0 25px 0;
+}
+.hidden{
+    display:none;
+}
